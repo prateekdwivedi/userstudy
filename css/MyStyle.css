@@ -1,0 +1,176 @@
+svg:hover {
+	  box-shadow : 0 0 20px black;
+	 }
+	 
+@import url(../style.css?aea6f0a);
+
+    input[type=text] {
+      font:normal bold 13px/30px Helmet,FreeSans,Sans-Serif;
+      background-color:white;
+      border:2px;
+	  border-color:black;
+      color:black;
+      width:6em;
+      height:30px;
+      padding:0 8px;
+      text-align:left;
+      text-transform:uppercase;
+    }
+
+#tooltip {
+        color: white;
+        opacity: .9;
+        background: #333;
+        padding: 5px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        white-space: nowrap;
+        pointer-events: none;
+      }
+      #circle circle {
+        fill: none;
+        pointer-events: all;
+      }
+      path.group {
+        fill-opacity: .8;
+      }
+      path.chord {
+        fill-opacity: .8;
+        stroke: #000;
+        stroke-width: .25px;
+      }
+      #circle:hover path.fade {
+        display: none;
+      }
+      
+	 .pickColor {
+	 border-style: solid;
+     border-width: 2px;
+	 width : 120px;
+	 float : left;
+	}
+
+#chart {
+         width: 960px;
+         height: 470px;
+       }
+
+text   {
+         pointer-events: none;
+       }
+
+.grandparent text {
+                   font-weight: bold;
+                  }
+
+rect  {
+ // fill: none; 
+       stroke: #fff;
+       stroke-width: 1px;
+      }
+
+rect.parent,
+.grandparent rect {
+       stroke-width: 2px;
+      }
+
+.grandparent:hover rect {
+       fill: darkgrey;
+      }
+
+.children rect.parent,
+.grandparent rect {
+       cursor: pointer;
+      }
+
+.children rect.parent{
+       fill: grey;
+      }
+
+.children rect.child {
+       opacity: 0;
+      }
+
+.children rect.parent {
+}
+
+.children:hover rect.child {
+  opacity: 1;
+  stroke-width: 1px;
+}
+
+
+
+.legend rect {
+  stroke-width: 0px;
+}
+
+.legend text {
+  text-anchor: middle;
+  pointer-events: auto;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: black;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100px;
+    width:500px;
+    float:left;
+    padding:5px;
+}
+
+#section {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:200px;
+    width:500px;
+    float:left;
+    padding:5px;
+}
+
+#chord {
+	float:right;
+}
+#rightcolumn {
+     background-color: #777;
+    float: right;
+	width: 460px;
+	height: 480px;
+}
+
+ .lasso path {
+  stroke: rgb(80,80,80);
+  stroke-width:2px;
+}
+
+.lasso .drawn {
+  fill-opacity:.05 ;
+}
+
+.lasso .loop_close {
+  fill:none;
+  stroke-dasharray: 4,4;
+}
+
+.lasso .origin {
+  fill:#3399FF;
+  fill-opacity:.5;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.not_possible {
+  fill:rgb(200,200,200);
+}
+
+.possible {
+  fill:#EC888C;
+}
